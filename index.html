@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department of Computer Science - Blaze University</title>
+    <style>
+        :root {
+            --primary-color: #008080; /* Teal */
+            --secondary-color: #ff6f61; /* Coral */
+            --accent-color: #f39c12; /* Orange */
+            --background-color: #f7f9f9; /* Light gray */
+            --text-color: #34495e; /* Dark gray */
+            --header-text-color: #ffffff; /* White header text */
+            --footer-text-color: #bdc3c7; /* Light footer text */
+        }
+
+        body {
+            line-height: 1.5;
+            margin: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+
+        header {
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            color: var(--header-text-color);
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2em;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            margin-top: 12px;
+        }
+        nav a {
+            margin: 0 15px;
+            color: var(--header-text-color);
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        .hero-image {
+            width: 100%;
+            display: block;
+            border-bottom: 5px solid var(--secondary-color);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-left: 5px solid var(--secondary-color);
+            padding-left: 10px;
+            margin-top: 30px;
+        }
+
+        ul {
+            list-style-position: inside;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 6px;
+            transition: 0.2s;
+        }
+        li:hover {
+            background-color: #d5dbdb;
+            padding-left: 5px;
+        }
+
+        .faculty-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .faculty-card {
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            padding: 15px;
+            width: calc(33% - 20px);
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+        .faculty-card:hover {
+            transform: scale(1.05);
+        }
+        .faculty-card img {
+            width: 100%;
+            border-radius: 50%;
+            max-width: 120px;
+        }
+        .faculty-card h3 {
+            margin: 10px 0 5px;
+            color: var(--secondary-color);
+        }
+        .faculty-card p {
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        footer {
+            background: var(--primary-color);
+            color: var(--footer-text-color);
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .faculty-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Department of AIML & DS</h1>
+        <nav>
+            <a href="#">Overview</a>
+            <a href="#">Programs</a>
+            <a href="#">Faculty</a>
+            <a href="#">Research</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <img src="assets/christ 1.jpg"
+         alt="Department Building" class="hero-image">
+
+    <div class="container">
+        <main>
+            <h2>About the Department</h2>
+            <p>
+                The Department of Computer Science at Blaze University is committed to academic excellence, research innovation, and preparing students for the evolving technology landscape. Our programs blend theoretical foundations with practical experience.
+            </p>
+
+            <h2>Undergraduate Programs</h2>
+            <ul>
+                <li>B.Tech in Computer Science</li>
+                <li>B.Tech in Artificial Intelligence</li>
+                <li>B.Tech in Data Science</li>
+            </ul>
+
+            <h2>Postgraduate Programs</h2>
+            <ul>
+                <li>M.Tech in Data Science</li>
+                <li>M.Tech in Computer Science</li>
+                <li>M.Tech in Artificial Intelligence & Machine Learning</li>
+            </ul>
+
+            <h2>Research Areas</h2>
+            <ul>
+                <li>Machine Learning and AI</li>
+                <li>Quantum Computing</li>
+                <li>Cybersecurity and Cryptography</li>
+                <li>Human-Computer Interaction</li>
+            </ul>
+
+            <h2>Our Faculty</h2>
+            <div class="faculty-container">
+                <div class="faculty-card">
+                    <h3>Prof. Jeeva</h3>
+                    <p>Expert in Artificial Intelligence & Robotics</p>
+                </div>
+                <div class="faculty-card">
+                    <h3>Prof. Surabhi V</h3>
+                    <p>Specialist in Quantum Computing</p>
+                </div>
+                <div class="faculty-card">
+                    <h3>Prof. Arvind V</h3>
+                    <p>Researcher in Cybersecurity & Cryptography</p>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <footer>
+        &copy; 2025 Blaze University - Department of Computer Science. All rights reserved.
+    </footer>
+
+</body>
+</html>
